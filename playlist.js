@@ -159,7 +159,8 @@ var playlist = [
 			title: "Xingu Nights",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/27_Xingu_Nights.mp3",
-			thumb: "https://images.tabletopaudio.com/xingu-nights.jpg"
+			thumb: "https://images.tabletopaudio.com/xingu-nights.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "Nephilim Labs FE",
@@ -183,7 +184,8 @@ var playlist = [
 			title: "Frozen Wastes",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/31_Frozen_Wastes.mp3",
-			thumb: "https://images.tabletopaudio.com/frozen-wastes.jpg"
+			thumb: "https://images.tabletopaudio.com/frozen-wastes.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "City and the City",
@@ -207,7 +209,8 @@ var playlist = [
 			title: "Swamplandia",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/35_Swamplandia.mp3",
-			thumb: "https://images.tabletopaudio.com/swamplandia.jpg"
+			thumb: "https://images.tabletopaudio.com/swamplandia.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "Down by the Sea",
@@ -274,7 +277,8 @@ var playlist = [
 			title: "Cathedral",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/46_Cathedral.mp3",
-			thumb: "https://images.tabletopaudio.com/cathedral.jpg"
+			thumb: "https://images.tabletopaudio.com/cathedral.jpg",
+      tags: ["temple"]
 	},
 	{
 			title: "There be Dragons!",
@@ -304,7 +308,8 @@ var playlist = [
 			title: "Woodland Campsite",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/51_Woodland_Campsite.mp3",
-			thumb: "https://images.tabletopaudio.com/woodland-campsite.jpg"
+			thumb: "https://images.tabletopaudio.com/woodland-campsite.jpg",
+      tags: ["nature", "camp"]
 	},
 	{
 			title: "Warehouse 13",
@@ -334,13 +339,15 @@ var playlist = [
 			title: "Medieval Town",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/56_Medieval_Town.mp3",
-			thumb: "https://images.tabletopaudio.com/medieval-town.jpg"
+			thumb: "https://images.tabletopaudio.com/medieval-town.jpg",
+      tags: ["town"]
 	},
 	{
 			title: "Colosseum",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/57_Colosseum.mp3",
-			thumb: "https://images.tabletopaudio.com/colosseum.jpg"
+			thumb: "https://images.tabletopaudio.com/colosseum.jpg",
+      tags: ["battle"]
 	},
 	{
 			title: "Terror",
@@ -383,7 +390,8 @@ var playlist = [
 			title: "Mountain Pass",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/64_Mountain_Pass.mp3",
-			thumb: "https://images.tabletopaudio.com/mountain-pass.jpg"
+			thumb: "https://images.tabletopaudio.com/mountain-pass.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "Dungeon I",
@@ -450,7 +458,8 @@ var playlist = [
 			title: "Docks District",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/75_Docks_District.mp3",
-			thumb: "https://images.tabletopaudio.com/docks-district2.jpg"
+			thumb: "https://images.tabletopaudio.com/docks-district2.jpg",
+      tags: ["town", "sea", "ocean"]
 	},
 	{
 			title: "Alchemist's Lab",
@@ -546,13 +555,15 @@ var playlist = [
 			title: "Elven Glade",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/91_Elven_Glade.mp3",
-			thumb: "https://images.tabletopaudio.com/elven-glade.jpg"
+			thumb: "https://images.tabletopaudio.com/elven-glade.jpg",
+      tags: ["nature", "mystical", "sylvan", "elven"]
 	},
 	{
 			title: "Skirmish",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/92_Skirmish.mp3",
-			thumb: "https://images.tabletopaudio.com/skirmish2.jpg"
+			thumb: "https://images.tabletopaudio.com/skirmish2.jpg",
+      tags: ["battle"]
 	},
 	{
 			title: "Starship Medical",
@@ -576,7 +587,8 @@ var playlist = [
 			title: "Windswept Plains",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/96_Windswept_Plains.mp3",
-			thumb: "https://images.tabletopaudio.com/windswept_plains.jpg"
+			thumb: "https://images.tabletopaudio.com/windswept_plains.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "City Under Siege",
@@ -624,7 +636,8 @@ var playlist = [
 			title: "River Town",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/104_River_Town.mp3",
-			thumb: "https://images.tabletopaudio.com/river-town.jpg"
+			thumb: "https://images.tabletopaudio.com/river-town.jpg",
+      tags: ["town"]
 	},
 	{
 			title: "Pippin the Hunchback",
