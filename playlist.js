@@ -213,7 +213,8 @@ var playlist = [
 			title: "Down by the Sea",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/36_Down_by_the_Sea.mp3",
-			thumb: "https://images.tabletopaudio.com/down-by-the-sea.jpg"
+			thumb: "https://images.tabletopaudio.com/down-by-the-sea.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "Catacombs",
@@ -357,7 +358,8 @@ var playlist = [
 			title: "Dark and Stormy",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/60_Dark_and_Stormy.mp3",
-			thumb: "https://images.tabletopaudio.com/dark-and-stormy.jpg"
+			thumb: "https://images.tabletopaudio.com/dark-and-stormy.jpg",
+      tags: ["weather", "rain"]
 	},
 	{
 			title: "Orbital Platform",
@@ -411,7 +413,8 @@ var playlist = [
 			title: "Forest: Night",
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/69_Forest_Night.mp3",
-			thumb: "https://images.tabletopaudio.com/forest-night.jpg"
+			thumb: "https://images.tabletopaudio.com/forest-night.jpg",
+      tags: ["nature"]
 	},
 	{
 			title: "The Age of Steam",
@@ -627,18 +630,27 @@ var playlist = [
 			title: "Pippin the Hunchback",
 			artist: "Kevin MacLeod",
 			src: "http://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Pippin%20the%20Hunchback.mp3",
-      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-pippin-the-hunchb.jpg"
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-pippin-the-hunchb.jpg",
+      tags: ["tavern"]
 	},
 	{
 			title: "Minstrel Guild",
 			artist: "Kevin MacLeod",
 			src: "http://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Minstrel%20Guild.mp3",
-      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-minstrel-guild-bo-1200x675.jpg"
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-minstrel-guild-bo-1200x675.jpg",
+      tags: ["tavern"]
 	},
 	{
 			title: "Digital Bark",
 			artist: "Kevin MacLeod",
 			src: "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Digital%20Bark.mp3",
-      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-digital-bark-dark.jpg"
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-digital-bark-dark.jpg",
+      tags: ["creepy"]
+	},
+	{
+			title: "Final Fantasy VII Victory Fanfare",
+      artist: "",
+			src: "http://www.gamethemesongs.com/song/download/22703",
+      thumb: "http://na.square-enix.com/sites/default/files/imagecache/post-image/image_gallery/469/f06cb861ec197ddfd17640a4954cab64.png",
 	},
 ];

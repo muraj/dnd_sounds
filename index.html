@@ -27,10 +27,16 @@ div.right-sidebar {
   float:right;
   text-align:right;
 }
+div.left-sidebar {
+  float:left;
+}
 </style>
 </head>
 <body>
 	<div class="controls">
+    <div class="left-sidebar">
+      <input type="text" id="searchbox" onkeyup="filterList()" placeholder="Search for track" />
+    </div>
     <div class="right-sidebar">
       <div class="recent">
         <ul id="recent-items">
@@ -48,6 +54,20 @@ div.right-sidebar {
   <script type="text/javascript" src="playlist.js"></script>
   <script type="text/javascript" src="cast-player.js"></script>
   <script type="text/javascript">
+    function filterList() {
+      var key = document.getElementById('searchbox').value.toLowerCase();
+      playlist.forEach(function(item, idx) {
+        var elem = document.getElementById('playlist-item-'+idx);
+        if (item.title.toLowerCase().includes(key))
+          elem.style.display = '';
+        else if (item.tags && item.tags.find(function(e) { return e.toLowerCase().includes(key); })) {
+            elem.style.display = '';
+        }
+        else {
+          elem.style.display = 'none';
+        }
+      });
+    }
 		function selectAndPlay(idx) {
 			selectMedia(playlist[idx].src, playlist[idx].title, playlist[idx].artist, playlist[idx].thumb);
 			loadMedia();
@@ -60,7 +80,7 @@ div.right-sidebar {
 		}
 		var list = document.getElementById('playlist');
   	playlist.forEach(function(item, idx) {
-			list.innerHTML += '<div class="playlist-item" id="' + idx + '" ' + 'onclick="selectAndPlay(' + idx + ')">'
+			list.innerHTML += '<div class="playlist-item" id="playlist-item-' + idx + '" ' + 'onclick="selectAndPlay(' + idx + ')">'
 												+ '<img src="' + item.thumb + '" width="300" height="200" alt />'
 												+ '<div class="desc">' + item.title + ' - ' + item.artist + '</div></div>';
 		});
