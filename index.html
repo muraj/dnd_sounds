@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cast Videos: Google Cast Chrome Sender SDK Demo App</title>
+<script type="text/javascript"
+        src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+<style>
+div.playlist-item {
+	float:left;
+	border: 1px solid #ccc;
+}
+div.playlist-item:hover {
+	border: 1px solid #777;
+	background-color: black;
+	color: white;
+}
+div.desc {
+	padding:15px;
+	text-align:center;
+}
+div.recent {
+	float:right;
+	overflow-y:scroll;
+	height:200px;
+	padding:10px;
+}
+</style>
+</head>
+<body>
+	<div class="controls">
+		<div class="recent">
+			<ul id="recent-items">
+			</ul>
+		</div>
+		<div class="current">
+			<img id="thumb" style="margin:0px auto;display:block" src="" width="300" height="200" />
+			<div id="current-title" style="text-align:center"></div>
+		</div>
+	</div>
+	<div class="playlist" id="playlist">
+	</div>
+  <script type="text/javascript" src="playlist.js"></script>
+  <script type="text/javascript" src="cast-player.js"></script>
+  <script type="text/javascript">
+		function selectAndPlay(idx) {
+			selectMedia(playlist[idx].src, playlist[idx].title, playlist[idx].artist, playlist[idx].thumb);
+			loadMedia();
+			document.getElementById('thumb').src = playlist[idx].thumb || '';
+			document.getElementById('current-title').innerHTML = playlist[idx].title || '';
+			var recentItems = document.getElementById('recent-items');
+			recentItems.innerHTML =
+					'<li onclick="selectAndPlay(' + idx + ')">'+playlist[idx].title+'</li>'
+					+ recentItems.innerHTML;
+		}
+		var list = document.getElementById('playlist');
+  	playlist.forEach(function(item, idx) {
+			list.innerHTML += '<div class="playlist-item" id="' + idx + '" ' + 'onclick="selectAndPlay(' + idx + ')">'
+												+ '<img src="' + item.thumb + '" width="300" height="200" alt />'
+												+ '<div class="desc">' + item.title + ' - ' + item.artist + '</div></div>';
+		});
+		selectAndPlay(0);
+  </script>
+</body>
+</html>
