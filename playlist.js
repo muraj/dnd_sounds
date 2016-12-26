@@ -622,5 +622,23 @@ var playlist = [
 			artist: "Tabletop Audio",
 			src: "https://sounds.tabletopaudio.com/104_River_Town.mp3",
 			thumb: "https://images.tabletopaudio.com/river-town.jpg"
-	}
+	},
+	{
+			title: "Pippin the Hunchback",
+			artist: "Kevin MacLeod",
+			src: "http://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Pippin%20the%20Hunchback.mp3",
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-pippin-the-hunchb.jpg"
+	},
+	{
+			title: "Minstrel Guild",
+			artist: "Kevin MacLeod",
+			src: "http://www.incompetech.com/music/royalty-free/mp3-royaltyfree/Minstrel%20Guild.mp3",
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-minstrel-guild-bo-1200x675.jpg"
+	},
+	{
+			title: "Digital Bark",
+			artist: "Kevin MacLeod",
+			src: "http://incompetech.com/music/royalty-free/mp3-royaltyfree/Digital%20Bark.mp3",
+      thumb: "http://sauwntrax.com/wp-content/uploads/2016/12/kevin-macleod-digital-bark-dark.jpg"
+	},
 ];

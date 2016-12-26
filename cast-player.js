@@ -78,7 +78,7 @@ function onInitSuccess() {
     var now = new Date().getTime();
 
     if (now - dateString < SESSION_IDLE_TIMEOUT) {
-      document.getElementById('joinsessionbyid').style.display = 'block';
+      //document.getElementById('joinsessionbyid').style.display = 'block';
     }
   }
 }
@@ -131,7 +131,7 @@ function sessionListener(e) {
   session.addUpdateListener(sessionUpdateListener.bind(this));
   // disable join by session id when auto join already
   if (storedSession) {
-    document.getElementById('joinsessionbyid').style.display = 'none';
+    //document.getElementById('joinsessionbyid').style.display = 'none';
   }
 }
 

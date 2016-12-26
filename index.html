@@ -19,19 +19,25 @@ div.desc {
 	text-align:center;
 }
 div.recent {
-	float:right;
 	overflow-y:scroll;
-	height:200px;
+	height:170px;
 	padding:10px;
+}
+div.right-sidebar {
+  float:right;
+  text-align:right;
 }
 </style>
 </head>
 <body>
 	<div class="controls">
-		<div class="recent">
-			<ul id="recent-items">
-			</ul>
-		</div>
+    <div class="right-sidebar">
+      <div class="recent">
+        <ul id="recent-items">
+        </ul>
+      </div>
+      <button id="launch" onclick="launchApp()">Cast!</button>
+    </div>
 		<div class="current">
 			<img id="thumb" style="margin:0px auto;display:block" src="" width="300" height="200" />
 			<div id="current-title" style="text-align:center"></div>
