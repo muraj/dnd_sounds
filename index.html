@@ -5,35 +5,7 @@
 <script type="text/javascript"
         src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 <style>
-@media (max-width: 480px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 480px) {
-    html {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 992px) {
-    html {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 1200px) {
-    html {
-        font-size: 16px;
-    }
-}
+html { font-size: 1em; }
 div.playlist-item {
 	float:left;
 	border: 1px solid #ccc;
@@ -43,8 +15,12 @@ div.playlist-item:hover {
 	background-color: black;
 	color: white;
 }
+div.playlist {
+  overflow-y:scroll;
+  height:calc(100vh - 220px - 1em);
+}
 div.desc {
-	padding:15px;
+	padding:10px;
 	text-align:center;
 }
 div.recent {
@@ -58,14 +34,27 @@ div.right-sidebar {
 }
 div.left-sidebar {
   float:left;
+  width:175px;
+}
+div.controls > div.current {
+  float:left;
+  margin-left: calc(50vw - 150px);
+}
+div.controls {
+  height:calc(202px + 1em);
+  position:relative;
 }
 </style>
 </head>
 <body>
 	<div class="controls">
     <div class="left-sidebar">
-      <input type="text" id="searchbox" onkeyup="filterList()" placeholder="Search for track" />
+      <input type="text" style="position:absolute;bottom:0;" id="searchbox" onkeyup="filterList()" placeholder="Search for track" />
     </div>
+		<div class="current">
+			<img id="thumb" style="margin:0px auto;display:block" src="" width="300" height="200" />
+			<div id="current-title" style="text-align:center"></div>
+		</div>
     <div class="right-sidebar">
       <div class="recent">
         <ul id="recent-items">
@@ -73,10 +62,6 @@ div.left-sidebar {
       </div>
       <button id="launch" onclick="launchApp()">Cast!</button>
     </div>
-		<div class="current">
-			<img id="thumb" style="margin:0px auto;display:block" src="" width="300" height="200" />
-			<div id="current-title" style="text-align:center"></div>
-		</div>
 	</div>
 	<div class="playlist" id="playlist">
 	</div>
